@@ -117,4 +117,7 @@ jobs:
         TEST_GRAPH_REPRESENTATION_9: "${{steps.test_graph_representation_9.outputs.result}}"
         TEST_GRAPH_REPRESENTATION_10: "${{steps.test_graph_representation_10.outputs.result}}"
       with:
-        runners: test_graph_representation_1,test_graph_representation_2,test_graph_representation_3,test_graph_representation_4,test_graph_representation_5,test_graph_representation_6,test_graph_representation_7,test_graph_representation_8,test_graph_representation_9,test_graph_representation_10
+        runners: > 
+        test_graph_representation_1,test_graph_representation_2,test_graph_representation_3,
+        test_graph_representation_4,test_graph_representation_5,test_graph_representation_6,test_graph_representation_7,
+        test_graph_representation_8,test_graph_representation_9,test_graph_representation_10
