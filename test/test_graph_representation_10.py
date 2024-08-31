@@ -8,5 +8,5 @@ node_dict={'a':0,'b':1,'c':2,'d':3,'e':4}
 def test_part_2():
        graph=part_2_graph()
        assert type(graph)==list
-       assert 'n' not in graph[node_dict['a']]
-       assert 'm' not in graph[node_dict['a']]
+       assert 'b' in graph[node_dict['a']]
+       assert 'c' in graph[node_dict['b']]
