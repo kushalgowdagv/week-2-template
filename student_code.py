@@ -20,7 +20,6 @@ def part_2_graph():
 
     # Each index in the list corresponds to the node, and the set contains the nodes it points to using list of lists
 
-
     graph = [
         ['b', 'e', 'a'],  # a points to b, e, and itself (a)
         ['c'],            # b points to c
@@ -31,7 +30,16 @@ def part_2_graph():
     
     return graph
 def part_3_graph():
-    pass
+    graph = [
+        {'b': 1, 'e': 4, 'a': 8 },  # a points to b (weight 1) and e (weight 4)
+        {'c': 3},          # b points to c (weight 3)
+        {'d': 4, 'e': 4, 'a': 4},  # c points to d (weight 4) and e (weight 4)
+        {'b': 2},          # d points to b (weight 2)
+        {}                 # e has no outgoing connections
+    ]
+    
+    return graph
+
 
 def part_4_graph():
     pass
