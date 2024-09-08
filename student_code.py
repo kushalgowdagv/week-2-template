@@ -42,7 +42,15 @@ def part_3_graph():
 
 
 def part_4_graph():
-    pass
+    graph = {
+        'a': {'b', 'e', 'a'},  # a points to b, e and a itself 
+        'b': {'c'},  # b points to c
+        'c': {'a'},       # c points to a
+        'e': {},  # e points to b and c
+        'd': set()        # d has no outgoing connections
+    }
+    
+    return graph
 
 def part_5_graph():
     pass
